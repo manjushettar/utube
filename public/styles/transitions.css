@@ -1,0 +1,31 @@
+.search-state,
+.results-state {
+    transition: opacity 0.3s ease;
+}
+
+.search-state:not(.active),
+.results-state:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-state.active,
+.results-state.active {
+    opacity: 1;
+}
+
+.preview-item {
+    transition: transform 0.2s ease-out;
+}
+
+.preview-item:hover {
+    transform: scale(1.05);
+}
+
+.search-button:hover {
+    transform: translateY(-1px);
+}
+
+.nav-toggle:hover span {
+    opacity: 0.8;
+}

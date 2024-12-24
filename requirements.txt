@@ -1,0 +1,6 @@
+numpy
+fastapi[standard]
+pydantic
+uvicorn
+google-api-python-client
+python-dotenv

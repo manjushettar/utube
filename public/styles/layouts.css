@@ -1,0 +1,52 @@
+.search-state,
+.results-state {
+    min-height: 100vh;
+    padding: 6rem 2rem 2rem;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.content-wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.results-state {
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-main {
+    height: calc(100vh - 100px);
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .video-main {
+        height: calc(100vh - 80px);
+    }
+}

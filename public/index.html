@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RetroTube</title>
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/components.css" />
+        <link rel="stylesheet" href="styles/layouts.css" />
+        <link rel="stylesheet" href="styles/transitions.css" />
+        <script type="module" src="scripts/main.js"></script>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo">RetroTube</div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Search State -->
+            <div class="search-state active">
+                <div class="content-wrapper">
+                    <h1 class="main-title">Discover Hidden Gems</h1>
+                    <p class="subtitle">
+                        Find YouTube videos within your preferred view range.
+                    </p>
+
+                    <div class="search-container">
+                        <div class="search-bar">
+                            <input
+                                type="text"
+                                placeholder="Search for videos..."
+                                id="search-input"
+                            />
+                            <button class="search-button">Search</button>
+                        </div>
+
+                        <div class="view-filter">
+                            <div class="filter-group">
+                                <label for="min-views">Minimum Views</label>
+                                <input
+                                    type="number"
+                                    id="min-views"
+                                    placeholder="0"
+                                />
+                            </div>
+                            <div class="filter-group">
+                                <label for="max-views">Maximum Views</label>
+                                <input
+                                    type="number"
+                                    id="max-views"
+                                    placeholder="1000000"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-state">
+                <div class="video-container">
+                    <!-- Main video area -->
+                    <div class="video-main">
+                        <!-- Video player will be inserted here -->
+                    </div>
+
+                    <!-- Video info section -->
+                    <div class="video-info">
+                        <h2 class="video-title"></h2>
+                        <p class="video-views"></p>
+                        <p class="video-description"></p>
+                    </div>
+
+                    <!-- Bottom preview bar -->
+                    <div class="preview-bar">
+                        <button class="nav-arrow prev">←</button>
+                        <div class="preview-container">
+                            <div class="preview-track">
+                                <!-- Thumbnails will be inserted here -->
+                            </div>
+                        </div>
+                        <button class="nav-arrow next">→</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
